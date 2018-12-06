@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b0bd"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="550px"
+            android:layout_height="65px"
+            android:layout_gravity="center"
+            android:layout_margin="25px"
+            android:text="Propietario"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="550px"
+            android:layout_height="65px"
+            android:layout_gravity="center"
+            android:layout_margin="15px"
+            android:background="@drawable/btb"
+            android:ems="10"
+            android:hint=" ID" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="550px"
+            android:layout_height="65px"
+            android:layout_gravity="center"
+            android:layout_margin="15px"
+            android:background="@drawable/btb"
+            android:ems="10"
+            android:hint=" Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/domicilio"
+            android:layout_width="550px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_margin="15px"
+            android:background="@drawable/btb"
+            android:ems="10"
+            android:hint=" Domicilio"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="550px"
+            android:layout_height="65px"
+            android:layout_gravity="center"
+            android:layout_margin="15px"
+            android:background="@drawable/btb"
+            android:ems="10"
+            android:hint=" Telefono"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/agregar"
+            android:layout_width="550px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:layout_margin="50px"
+            android:background="@drawable/btb"
+            android:text="AGREGAR" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="90px"
+            android:layout_marginBottom="45px">
+
+            <Button
+                android:id="@+id/consultar"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:background="@drawable/search" />
+
+            <Button
+                android:id="@+id/actualizar"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/update" />
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/delete" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/inmueble"
+            android:layout_width="match_parent"
+            android:layout_height="65px"
+            android:text="Ingrese a Inmueble"
+            android:textAlignment="center"
+            android:textColor="#3f48cc"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</ScrollView>
